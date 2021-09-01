@@ -1,0 +1,14 @@
+package com.GetCalley.Base;
+
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class TestBase {
+
+	public static void initiatlization()
+	{
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--incognito");
+		
+	}
+	
+}

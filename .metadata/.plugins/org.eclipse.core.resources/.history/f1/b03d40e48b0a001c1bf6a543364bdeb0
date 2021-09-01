@@ -1,0 +1,16 @@
+package com.GetCalley.TestCases;
+
+import org.testng.annotations.Test;
+
+import com.GetCalley.Pages.AddCallList;
+
+public class AddCallListTest 
+{
+
+	@Test
+	public void callListDisplay()
+	{
+		AddCallList list=new AddCallList();
+		list.addcallList("ak1y");
+	}
+}

@@ -1,0 +1,17 @@
+package com.GetCalley.TestCases;
+
+import java.io.IOException;
+
+import com.GetCalley.Pages.ExcelUtlities;
+import com.GetCalley.Pages.SignUp;
+
+public class SignUpTest {
+	String filepath=".\\Files\\UserdataRegistation.xlsx";
+public void signupPage() throws IOException {
+	ExcelUtlities exceldata=new ExcelUtlities();
+	
+	SignUp sUp=new SignUp();
+	sUp.UserSignUp(exceldata.getData(null, null));
+}	
+
+}

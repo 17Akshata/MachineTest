@@ -1,0 +1,19 @@
+package com.GetCalley.TestCases;
+
+import java.io.IOException;
+
+import org.testng.annotations.Test;
+
+import com.GetCalley.Pages.SignUp;
+
+public class SignUpTest {
+	
+	@Test
+	public void signUpUser() throws IOException
+	
+	{
+		SignUp upS=new SignUp();
+		upS.UserSignUp("Akshata");
+	}
+
+}

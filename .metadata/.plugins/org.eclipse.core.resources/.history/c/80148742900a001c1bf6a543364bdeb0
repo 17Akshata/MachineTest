@@ -1,0 +1,28 @@
+package com.GetCalley.TestCases;
+
+import java.io.IOException;
+
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import com.GetCalley.Base.TestBase;
+import com.GetCalley.Pages.SignUp;
+
+public class SignUpTest {
+	
+	@BeforeTest
+	public void OpenBrowser()
+	{
+		TestBase.initiatlization();
+	}
+	
+	@Test
+	public void signUpUser() throws IOException, InterruptedException
+	
+	{
+		
+		SignUp upS=new SignUp();
+		upS.UserSignUp("Akshata24564w41","ak153@gmail.com",1234,983477483);
+	}
+
+}

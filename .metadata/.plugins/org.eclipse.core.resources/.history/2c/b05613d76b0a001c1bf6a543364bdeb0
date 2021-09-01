@@ -1,0 +1,10 @@
+package com.GetCalley.Base;
+
+public class GetExcelData {
+
+	public GetExcelData()
+	{
+		String excelFilePath=".\\Files\\UserdataRegistation.xlsx"
+	}
+	
+}

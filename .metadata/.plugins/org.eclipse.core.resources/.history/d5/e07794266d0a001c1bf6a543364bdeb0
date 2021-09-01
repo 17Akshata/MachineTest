@@ -1,0 +1,24 @@
+package com.GetCalley.Base;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class GetExcelData {
+
+	public GetExcelData() throws IOException
+	{
+		String excelFilePath=".\\Files\\UserdataRegistation.xlsx";
+		
+		FileInputStream inp=new FileInputStream(excelFilePath);
+		XSSFWorkbook workbook=new XSSFWorkbook(inp);
+		XSSFSheet sheetname=workbook.getSheet("Sheet1");
+		
+		
+		
+	}
+	
+}

@@ -1,0 +1,13 @@
+package com.GetCalley.TestCases;
+
+import org.testng.annotations.Test;
+
+public class SignUpTest {
+	
+	@Test
+	public void signUpUser()
+	{
+		
+	}
+
+}

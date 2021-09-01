@@ -1,0 +1,21 @@
+package com.GetCalley.Pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class AddCallList {
+
+	@FindBy(id="ContentPlaceHolder1_listname")
+	WebElement listname;
+	
+	@FindBy(id="ContentPlaceHolder1_bnt_submit")
+	WebElement proceddtolocadClick;
+	
+	
+	public void addcallList(String calllist)
+	{
+		listname.sendKeys(calllist);
+		proceddtolocadClick.click();
+		
+	}
+}
